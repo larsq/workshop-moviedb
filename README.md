@@ -20,3 +20,7 @@ content is published on Public Domain licence.
 
 ## License
 This project is published under MIT licences
+
+## Pull requests and support
+The project will not accept any PR and the author will not provide any
+support or answer for any questions related to the content. 
