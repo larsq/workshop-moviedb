@@ -20,7 +20,7 @@ release: build ## build docker file
 	docker build --build-arg VERSION=${version} -t larsq/moviedb:${version} -t larsq/moviedb:latest .
 
 docker-run: ## run docker file locally
-	docker run --name moviedb --rm -p 8080:8080 larsq/moviedb:${version}
+	docker run -d --name moviedb --rm -p 8080:8080 larsq/moviedb:${version}
 
 docker-run-shell: ## open shell in docker-image
 	docker run -it --name moviedb --rm -p 8080:8080 --entrypoint sh  larsq/moviedb:${version}
